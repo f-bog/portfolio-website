@@ -18,7 +18,7 @@ export const darkTheme = {
   text: "#ffffff",
   primary: "#131313",
   secondary: "#0f0f0f",
-  accentColor: "#131313",
+  accentColor: "##383838",
   hover: "#ffffff",
   label: "#ffffff",
   overlay: "rgba(0, 0, 0, 0.5)",
