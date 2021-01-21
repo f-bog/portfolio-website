@@ -19,7 +19,6 @@ import "./layout.css"
 const Layout = ({ children }) => {
   const [theme, setTheme] = useState(false)
 
-  console.log(isDark)
   const toggleTheme = () => {
     if (theme) {
       setTheme(false)
