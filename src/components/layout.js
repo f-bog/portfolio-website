@@ -5,14 +5,30 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
+import Footer from "./Footer"
+import Toggle from "./Toggle"
+import { GlobalStyles } from "./global"
+import { ThemeProvider } from "styled-components"
+import { useStaticQuery, graphql } from "gatsby"
+import { lightTheme, darkTheme } from "./theme"
 import "./layout.css"
 
 const Layout = ({ children }) => {
+  const [theme, setTheme] = useState(localStorage.getItem("isDark") === "false")
+
+  const toggleTheme = () => {
+    if (theme) {
+      setTheme(false)
+      localStorage.setItem("isDark", theme)
+    } else {
+      setTheme(true)
+      localStorage.setItem("isDark", theme)
+    }
+  }
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -24,25 +40,19 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
+    <ThemeProvider theme={theme ? lightTheme : darkTheme}>
+      <>
+        <Toggle theme={theme} toggleTheme={toggleTheme} />
+        <GlobalStyles />
+        <Header
+          siteTitle={data.site.siteMetadata?.title || `Frederick Bogdanoff`}
+        />
+        <div style={{ marginTop: "100px" }}>
+          <main>{children}</main>
+        </div>
+        <Footer />
+      </>
+    </ThemeProvider>
   )
 }
 
