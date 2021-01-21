@@ -17,15 +17,17 @@ import { lightTheme, darkTheme } from "./theme"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const [theme, setTheme] = useState(localStorage.getItem("isDark") === "false")
+  const [theme, setTheme] = useState(
+    window.localStorage.getItem("isDark") === "false"
+  )
 
   const toggleTheme = () => {
     if (theme) {
       setTheme(false)
-      localStorage.setItem("isDark", theme)
+      window.localStorage.setItem("isDark", theme)
     } else {
       setTheme(true)
-      localStorage.setItem("isDark", theme)
+      window.localStorage.setItem("isDark", theme)
     }
   }
 
