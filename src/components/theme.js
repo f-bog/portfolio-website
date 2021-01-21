@@ -13,11 +13,12 @@ export const lightTheme = {
   overlay: "rgba(225, 225, 225, 0.3)",
   overlayHover: "rgba(225, 225, 225, 0.7)",
 }
-
+// primary: "#131313",
+// secondary: "#0f0f0f",
 export const darkTheme = {
   text: "#ffffff",
-  primary: "#131313",
-  secondary: "#0f0f0f",
+  primary: "#242424",
+  secondary: "#1a1a1a",
   accentColor: "#262626",
   hover: "#ffffff",
   label: "#ffffff",
