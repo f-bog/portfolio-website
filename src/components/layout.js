@@ -5,6 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
+import { config } from "@fortawesome/fontawesome-svg-core"
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
