@@ -17,10 +17,9 @@ import { lightTheme, darkTheme } from "./theme"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const [theme, setTheme] = useState(
-    window.localStorage.getItem("isDark") === "false" || false
-  )
+  const [theme, setTheme] = useState(false)
 
+  console.log(isDark)
   const toggleTheme = () => {
     if (theme) {
       setTheme(false)
