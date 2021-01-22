@@ -28,15 +28,15 @@ function PortfolioCard({ title, url, thumbnail, github, slug }) {
       <div className="card-content">
         <h3>{title}</h3>
         <div>
-          <a href={url}>
+          <a href={url} target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLink} /> View Project
           </a>
           {github && (
-            <a href={github}>
+            <a href={github} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faGithub} /> GitHub
             </a>
           )}
-          <Link to={slug}>
+          <Link to={slug} target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faFileAlt} /> Read More
           </Link>
         </div>

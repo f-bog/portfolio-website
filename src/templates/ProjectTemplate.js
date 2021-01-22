@@ -26,12 +26,12 @@ export default function Template({ data }) {
             </Link>
             <div>
               {frontmatter.github && (
-                <a href={frontmatter.github}>
+                <a href={frontmatter.github} target="_blank" rel="noreferrer">
                   <FontAwesomeIcon icon={faGithub} /> GitHub
                 </a>
               )}
 
-              <a href={frontmatter.url}>
+              <a href={frontmatter.url} target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faLink} /> Live Link
               </a>
             </div>

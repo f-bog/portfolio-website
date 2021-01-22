@@ -44,9 +44,8 @@ function About({ scrollRef }) {
         </p>
         <p>
           A little over 3 years ago I decided to teach myself web development
-          and design. It's been incredibly rewarding and an enjoyable process,
-          and to be honest I'm beginning to think It's impossible to stop
-          learning.
+          and design. It's been incredibly rewarding, an enjoyable process, and
+          to be honest I'm beginning to think It's impossible to stop learning.
         </p>
         <p>
           I currently work part time as a freelance web developer, maintaining,
