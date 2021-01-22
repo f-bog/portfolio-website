@@ -20,6 +20,8 @@ const Layout = ({ children }) => {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== "undefined") {
       return window.localStorage.getItem("isDark") === "false"
+    } else {
+      return false
     }
   })
 
