@@ -5,6 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
+import { config } from "@fortawesome/fontawesome-svg-core"
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
@@ -17,14 +18,15 @@ import { lightTheme, darkTheme } from "./theme"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const [theme, setTheme] = useState(() => {
-    if (typeof window !== "undefined") {
-      return window.localStorage.getItem("isDark") === "false"
-    } else {
-      return false
-    }
-  })
+  const [theme, setTheme] = useState(false)
 
+  // const [theme, setTheme] = useState(() => {
+  //   if (typeof window !== "undefined") {
+  //     return window.localStorage.getItem("isDark") === "false"
+  //   } else {
+  //     return false
+  //   }
+  // })
   const toggleTheme = () => {
     if (theme) {
       setTheme(false)
