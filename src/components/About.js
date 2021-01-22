@@ -54,8 +54,8 @@ function About({ scrollRef }) {
           businesses, ecommerce, and startups.
         </p>
         <p>
-          If you need help working on something awesome!{" "}
-          <span>Download Resume.</span>
+          If you need help working on something awesome, I would love to hear
+          from you! <span>Download My Resume.</span>
         </p>
         <div
           className="button-container"
