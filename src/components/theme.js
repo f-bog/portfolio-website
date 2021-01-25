@@ -4,7 +4,7 @@
 // dark color for contrast on background:
 
 export const lightTheme = {
-  text: "#3d3d3d",
+  text: "#1c1c1c",
   primary: "#eaeaea",
   secondary: "#ffffff",
   accentColor: "#919191",

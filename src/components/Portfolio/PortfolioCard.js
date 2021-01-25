@@ -51,7 +51,7 @@ const StyledCard = styled(animated.div)`
   height: 420px;
   border-radius: 15px;
   margin: 2em 0.5em;
-  box-shadow: 3px 3px 16px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
   .card-image {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;

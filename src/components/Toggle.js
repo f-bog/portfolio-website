@@ -26,7 +26,7 @@ const StyledToggle = styled.button`
   height: 80px;
   bottom: 30px;
   right: 30px;
-  box-shadow: 3px 3px 16px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   p {
     font-weight: 600;

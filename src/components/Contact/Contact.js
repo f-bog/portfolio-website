@@ -66,11 +66,11 @@ const StyledContainer = styled.div`
   width: 100%;
   align-items: center;
   h2 {
-    margin: 2em 0 1em 0;
+    margin: 1em 0;
   }
   h1 {
     font-size: 3em;
-    margin: 0;
+    margin: 1em 0;
   }
   .form-container {
     width: 100%;

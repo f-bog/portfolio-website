@@ -81,7 +81,7 @@ const StyledBox = styled.div`
     z-index: 4;
     background: ${({ theme }) => theme.primary};
     border-radius: 10px;
-    box-shadow: 3px 3px 16px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
   }
   .border-outside {
     top: 25px;
