@@ -5,7 +5,6 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import { config } from "@fortawesome/fontawesome-svg-core"
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
@@ -16,27 +15,10 @@ import { ThemeProvider } from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import { lightTheme, darkTheme } from "./theme"
 import "./layout.css"
+import { useLightMode } from "../hooks/useLightMode"
 
 const Layout = ({ children }) => {
-  const [theme, setTheme] = useState(false)
-
-  // const [theme, setTheme] = useState(() => {
-  //   if (typeof window !== "undefined") {
-  //     return window.localStorage.getItem("isDark") === "false"
-  //   } else {
-  //     return false
-  //   }
-  // })
-  const toggleTheme = () => {
-    if (theme) {
-      setTheme(false)
-      window.localStorage.setItem("isDark", theme)
-    } else {
-      setTheme(true)
-      window.localStorage.setItem("isDark", theme)
-    }
-  }
-
+  const [theme, toggleTheme, mountedComponent] = useLightMode()
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -46,9 +28,10 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  if (!mountedComponent) return <div />
 
   return (
-    <ThemeProvider theme={theme ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
         <Toggle theme={theme} toggleTheme={toggleTheme} />
         <GlobalStyles />

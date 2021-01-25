@@ -4,9 +4,10 @@ config.autoAddCss = false
 export const GlobalStyles = createGlobalStyle`
 ${dom.css()}
 body {
+  background: ${({ theme }) => theme.dark};
   font-family: "Montserrat";
   color: ${({ theme }) => theme.text};
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s linear;
 }
 a {
   color: ${({ theme }) => theme.text};

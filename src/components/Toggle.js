@@ -7,12 +7,13 @@ export default function Toggle({ toggleTheme, theme }) {
   return (
     <StyledToggle onClick={toggleTheme}>
       <FontAwesomeIcon icon={faLightbulb} />
-      <p>{theme ? "light" : "dark"}</p>
+      <p>{theme === "light" ? "light" : "dark"}</p>
     </StyledToggle>
   )
 }
 
-const StyledToggle = styled.div`
+const StyledToggle = styled.button`
+  border: none;
   display: block;
   text-align: center;
   position: fixed;
