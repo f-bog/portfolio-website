@@ -12,10 +12,18 @@ function Drawer({ toggle }) {
   return (
     <StyledDrawer style={props}>
       <nav>
-        <AnimatedLink to="/">Home</AnimatedLink>
-        <AnimatedLink to="/about">About</AnimatedLink>
-        <AnimatedLink to="/portfolio">Portfolio</AnimatedLink>
-        <AnimatedLink to="/contact">Contact</AnimatedLink>
+        <AnimatedLink to="/" activeClassName="active">
+          Home
+        </AnimatedLink>
+        <AnimatedLink to="/about" activeClassName="active">
+          About
+        </AnimatedLink>
+        <AnimatedLink to="/portfolio" activeClassName="active">
+          Portfolio
+        </AnimatedLink>
+        <AnimatedLink to="/contact" activeClassName="active">
+          Contact
+        </AnimatedLink>
       </nav>
     </StyledDrawer>
   )
@@ -33,6 +41,9 @@ const StyledDrawer = styled(animated.div)`
   height: 90vh;
   width: 100%;
   transform: translateX(100%);
+  .active {
+    color: rgb(103, 103, 103);
+  }
   nav {
     display: flex;
     flex-direction: column;

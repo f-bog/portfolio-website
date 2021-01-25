@@ -5,10 +5,18 @@ import styled from "styled-components"
 function Navigation() {
   return (
     <StyledNav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/portfolio">Portfolio</Link>
-      <Link to="/contact">Contact</Link>
+      <Link to="/" activeClassName="active">
+        Home
+      </Link>
+      <Link to="/about" activeClassName="active">
+        About
+      </Link>
+      <Link to="/portfolio" activeClassName="active">
+        Portfolio
+      </Link>
+      <Link to="/contact" activeClassName="active">
+        Contact
+      </Link>
     </StyledNav>
   )
 }
@@ -21,6 +29,9 @@ const StyledNav = styled.nav`
     font-size: 1.5em;
     color: grey;
   }
+  .active {
+    color: rgb(103, 103, 103);
+  }
   a {
     font-size: 1em;
     font-weight: 600;
@@ -29,6 +40,10 @@ const StyledNav = styled.nav`
     margin: 0 20px;
     text-decoration: none;
     ${"" /* color: white; */}
+    transition: color 0.2s linear;
+    &:hover {
+      color: rgb(103, 103, 103);
+    }
   }
   @media only screen and (min-width: 768px) {
     display: flex;

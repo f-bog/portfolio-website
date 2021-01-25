@@ -38,19 +38,27 @@ function Contact({ eleRef, heading = "h2" }) {
         </form>
       </div>
       <div className="links">
-        <a href="/">
+        <a
+          href="https://github.com/frederickbogdanoff"
+          target="_blank"
+          rel="noreferrer"
+        >
           GitHub <FontAwesomeIcon icon={faGithubSquare} />
         </a>
-        <a href="/">
+        <a
+          href="https://www.linkedin.com/in/frederick-bogdanoff/"
+          target="_blank"
+          rel="noreferrer"
+        >
           Linkedin <FontAwesomeIcon icon={faLinkedin} />
         </a>
         <a href="/">
           Resume <FontAwesomeIcon icon={faListAlt} />
         </a>
-        <a href="/">
+        <a href="mailto:fredericks.webdesigns@gmail.com">
           Email <FontAwesomeIcon icon={faEnvelope} />
         </a>
-        <a href="/">
+        <a href="tel:0424933007">
           Phone <FontAwesomeIcon icon={faPhoneSquare} />
         </a>
       </div>
