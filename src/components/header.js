@@ -6,8 +6,9 @@ import logo from "../images/logo.png"
 
 import styled from "styled-components"
 import Navigation from "./Navigation/Navigation"
-
-const Header = ({ siteTitle }) => (
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLightbulb } from "@fortawesome/free-solid-svg-icons"
+const Header = ({ siteTitle, theme, toggleTheme }) => (
   <StyledHeader>
     <div
       className="header-container"
@@ -22,18 +23,23 @@ const Header = ({ siteTitle }) => (
 
       <Hamburger className="hamburger" />
       <Navigation />
+      <button className="toggleTheme" onClick={toggleTheme}>
+        <p>{theme}</p> <FontAwesomeIcon icon={faLightbulb} />
+      </button>
     </div>
   </StyledHeader>
 )
 
 const StyledHeader = styled.header`
   background: ${({ theme }) => theme.secondary};
-
   width: 100%;
   height: 100px;
   position: fixed;
   top: 0px;
   z-index: 999;
+  .toggleTheme {
+    display: none;
+  }
   .header-container {
     width: 90%;
     display: flex;
@@ -47,6 +53,21 @@ const StyledHeader = styled.header`
   @media only screen and (min-width: 768px) {
     .header-container {
       max-width: 1260px;
+    }
+    .toggleTheme {
+      display: block;
+      text-align: center;
+      border: none;
+      color: ${({ theme }) => theme.text};
+      background: ${({ theme }) => theme.secondary};
+      font-size: 1.5em;
+      p {
+        display: inline;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+      }
     }
   }
 `

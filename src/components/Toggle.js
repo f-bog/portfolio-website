@@ -34,4 +34,7 @@ const StyledToggle = styled.button`
     padding: 0;
     margin: 0;
   }
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
 `

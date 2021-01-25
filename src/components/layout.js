@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React, { useState } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
 import Footer from "./Footer"
@@ -36,6 +36,8 @@ const Layout = ({ children }) => {
         <Toggle theme={theme} toggleTheme={toggleTheme} />
         <GlobalStyles />
         <Header
+          theme={theme}
+          toggleTheme={toggleTheme}
           siteTitle={data.site.siteMetadata?.title || `Frederick Bogdanoff`}
         />
         <div style={{ marginTop: "100px" }}>

@@ -1,14 +1,11 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 import Drawer from "./Drawer"
+import { useToggle } from "../../../hooks/useToggle"
 // import { useSpring, animated } from "react-spring"
 
 function Hamburger() {
-  const [toggle, setToggle] = useState(false)
-
-  const handleToggle = () => {
-    setToggle(!toggle)
-  }
+  const [toggle, handleToggle] = useToggle()
 
   return (
     <>
