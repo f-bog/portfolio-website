@@ -20,11 +20,13 @@ function About({ scrollRef }) {
   const [props, set] = useSpring(() => ({
     xy: [0, 0],
   }))
+
   const [{ y, color }, setBounce] = useSpring(() => ({
     y: -60,
     color: "#e80583",
     config: config.wobbly,
   }))
+
   return (
     <StyledContainer
       onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}

@@ -24,7 +24,8 @@ const Header = ({ siteTitle, theme, toggleTheme }) => (
       <Hamburger className="hamburger" />
       <Navigation />
       <button className="toggleTheme" onClick={toggleTheme}>
-        <p>{theme}</p> <FontAwesomeIcon icon={faLightbulb} />
+        <FontAwesomeIcon icon={faLightbulb} />
+        <p>{theme === "light" ? "Dark" : "Light"}</p>{" "}
       </button>
     </div>
   </StyledHeader>
@@ -37,6 +38,7 @@ const StyledHeader = styled.header`
   position: fixed;
   top: 0px;
   z-index: 999;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
   .toggleTheme {
     display: none;
   }
@@ -62,7 +64,6 @@ const StyledHeader = styled.header`
       background: ${({ theme }) => theme.secondary};
       font-size: 1.5em;
       p {
-        display: inline;
         font-size: 14px;
         font-weight: 600;
         margin: 0;

@@ -115,7 +115,7 @@ const StyledContainer = styled.div`
       border-radius: 5px;
       width: 100%;
       background: ${({ theme }) => theme.accentColor};
-      color: ${({ theme }) => theme.text};
+      color: white;
     }
     textarea {
       height: 250px;

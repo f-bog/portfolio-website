@@ -19,8 +19,8 @@ Expert Service Locating is a South East Queensland underground locating company,
 
 ## Project Details
 
-Website was built using [Gatsby]("https://www.gatsbyjs.com/") (React), this allows for really fast load times and out-of-box image optimisation.
+Website was built using [Gatsby](https://www.gatsbyjs.com) (React), this allows for really fast load times and out-of-box image optimisation.
 
-CSS styling done with [styled components]("https://styled-components.com/")
+CSS styling done with [styled components](https://styled-components.com)
 
 Uses [react-helmet](https://github.com/nfl/react-helmet) to manage meta tags for SEO.

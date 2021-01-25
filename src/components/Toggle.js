@@ -7,7 +7,7 @@ export default function Toggle({ toggleTheme, theme }) {
   return (
     <StyledToggle onClick={toggleTheme}>
       <FontAwesomeIcon icon={faLightbulb} />
-      <p>{theme === "light" ? "light" : "dark"}</p>
+      <p>{theme === "light" ? "Dark" : "Light"}</p>
     </StyledToggle>
   )
 }

@@ -18,4 +18,4 @@ Implemented local storage to keep results on refresh.
 
 "Get more jokes!" button Fetches more jokes without duplicates.
 
-Uses [Framer Motion]("https://www.framer.com/motion/") to allow the list to reorder based on votes, whilst providing a neat animation.
+Uses [Framer Motion](https://www.framer.com/motion/) to allow the list to reorder based on votes, whilst providing a neat animation.
