@@ -21,16 +21,17 @@ const StyledToggle = styled.button`
   padding: 15px;
   color: ${({ theme }) => theme.text};
   background: ${({ theme }) => theme.primary};
-  font-size: 1.5em;
-  width: 80px;
+  font-size: 1.2em;
+  width: 70px;
   height: 80px;
   bottom: 30px;
-  right: 30px;
+  right: 0;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   p {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     padding: 0;
     margin: 0;
   }
