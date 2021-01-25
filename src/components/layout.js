@@ -44,9 +44,9 @@ const Layout = ({ children }) => {
         />
         <div style={{ marginTop: "100px" }}>
           <Transition
-            from={{ opacity: 0, transform: "translateY(50%)" }}
-            enter={{ opacity: 1, transform: "translateY(0%)" }}
-            leave={{ opacity: 0, transform: "translateY(50%)" }}
+            from={{ opacity: 0, transform: "scale(1.1)" }}
+            enter={{ opacity: 1, transform: "scale(1)" }}
+            leave={{ opacity: 0, transform: "scale(1.1)" }}
           >
             {() => style => <main style={style}>{children}</main>}
           </Transition>
