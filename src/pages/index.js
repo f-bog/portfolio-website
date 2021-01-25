@@ -23,7 +23,7 @@ const IndexPage = () => (
       <RecentProjects />
     </Section>
     <Section background="two">
-      <Contact />
+      <Contact heading="h2" />
     </Section>
   </Layout>
 )

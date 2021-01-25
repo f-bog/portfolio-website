@@ -23,7 +23,7 @@ const StyledToggle = styled.button`
   background: ${({ theme }) => theme.primary};
   font-size: 1.2em;
   width: 70px;
-  height: 80px;
+  height: 70px;
   bottom: 30px;
   right: 0;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
