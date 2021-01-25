@@ -17,6 +17,8 @@ import { lightTheme, darkTheme } from "./theme"
 import "./layout.css"
 import { useLightMode } from "../hooks/useLightMode"
 
+import { Transition } from "react-spring/renderprops"
+
 const Layout = ({ children }) => {
   const [theme, toggleTheme, mountedComponent] = useLightMode()
   const data = useStaticQuery(graphql`
@@ -28,7 +30,7 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  if (!mountedComponent) return <div />
+  // if (!mountedComponent) return <div />
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
@@ -41,7 +43,13 @@ const Layout = ({ children }) => {
           siteTitle={data.site.siteMetadata?.title || `Frederick Bogdanoff`}
         />
         <div style={{ marginTop: "100px" }}>
-          <main>{children}</main>
+          <Transition
+            from={{ opacity: 0, transform: "scale(1.1)" }}
+            enter={{ opacity: 1, transform: "scale(1)" }}
+            leave={{ opacity: 0, transform: "scale(1.1)" }}
+          >
+            {() => style => <main style={style}>{children}</main>}
+          </Transition>
         </div>
         <Footer />
       </>
