@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  // if (!mountedComponent) return <div />
+  if (!mountedComponent) return <div style={{ height: "100vh" }} />
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>

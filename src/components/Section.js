@@ -13,7 +13,8 @@ const StyledSection = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  transition: all 0.2s ease-in-out;
+  position: relative;
+  z-index: 900;
   background: ${props =>
     props.background === "secondary"
       ? ({ theme }) => theme.primary

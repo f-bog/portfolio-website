@@ -73,8 +73,6 @@ const StyledContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  position: relative;
-  z-index: 900;
   h2 {
     margin: 1em 0;
   }
