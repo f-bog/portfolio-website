@@ -55,7 +55,7 @@ const StyledDrawer = styled(animated.div)`
     font-weight: 600;
     a {
       color: white;
-      padding: 1em;
+      padding: 0px 1em 1em 1em;
       text-decoration: none;
     }
   }
