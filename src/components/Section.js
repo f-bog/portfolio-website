@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 
-function Section({ children, background }) {
+function Section({ children, background, eleRef }) {
   return (
-    <StyledSection background={background}>
+    <StyledSection background={background} ref={eleRef}>
       <div className="section-content">{children}</div>
     </StyledSection>
   )

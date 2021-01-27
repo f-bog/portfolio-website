@@ -17,8 +17,8 @@ const AboutPage = () => {
         <About scrollRef={myRef} />
       </Section>
 
-      <Section background="two">
-        <Contact eleRef={myRef} />
+      <Section eleRef={myRef} background="two">
+        <Contact />
       </Section>
     </Layout>
   )

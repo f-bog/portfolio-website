@@ -18,7 +18,7 @@ const Header = ({ siteTitle, theme, toggleTheme }) => (
       }}
     >
       <Link to="/">
-        <img alt="logo" className="header-logo" src={logo} width="50px" />
+        <img alt="logo" className="header-logo" src={logo} height="55px" />
       </Link>
 
       <Hamburger className="hamburger" />
@@ -34,7 +34,7 @@ const Header = ({ siteTitle, theme, toggleTheme }) => (
 const StyledHeader = styled.header`
   background: ${({ theme }) => theme.secondary};
   width: 100%;
-  height: 100px;
+  height: 80px;
   position: fixed;
   top: 0px;
   z-index: 999;

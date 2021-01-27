@@ -34,7 +34,8 @@ const StyledFooter = styled.footer`
     align-items: center;
     text-align: center;
     width: 100%;
-    font-size: 0.9em;
+    background: ${({ theme }) => theme.secondary};
+    font-size: 0.8em;
     color: ${({ theme }) => theme.text};
     p {
       margin: 10px;

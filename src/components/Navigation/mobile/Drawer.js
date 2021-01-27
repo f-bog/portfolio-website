@@ -32,13 +32,13 @@ function Drawer({ toggle }) {
 const StyledDrawer = styled(animated.div)`
   display: flex;
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.9);
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   transform: translateX(100%);
   .active {

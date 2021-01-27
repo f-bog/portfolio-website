@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
           toggleTheme={toggleTheme}
           siteTitle={data.site.siteMetadata?.title || `Frederick Bogdanoff`}
         />
-        <div style={{ marginTop: "100px" }}>
+        <div style={{ marginTop: "80px" }}>
           <Transition
             from={{ opacity: 0, transform: "scale(1.1)" }}
             enter={{ opacity: 1, transform: "scale(1)" }}

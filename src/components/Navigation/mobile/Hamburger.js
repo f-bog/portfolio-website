@@ -24,10 +24,11 @@ const StyledHamburger = styled.button`
   border: none;
   div {
     background: ${({ theme }) => theme.text};
-    width: 50px;
-    margin: 10px;
-    height: 5px;
-    border-radius: 5px;
+    width: 32px;
+    margin: 6px 0px;
+    height: 4px;
+
+    border-radius: 2px;
   }
   @media only screen and (min-width: 768px) {
     display: none;
