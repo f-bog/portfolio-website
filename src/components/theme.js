@@ -16,9 +16,9 @@ export const lightTheme = {
 
 export const darkTheme = {
   text: "#ffffff",
-  primary: "#171717",
+  primary: "#151515",
   secondary: "#0f0f0f",
-  accentColor: "#171717",
+  accentColor: "#151515",
   hover: "#ffffff",
   label: "rgb(134, 134, 134)",
   overlay: "rgba(0, 0, 0, 0.5)",
