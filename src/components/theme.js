@@ -7,20 +7,20 @@ export const lightTheme = {
   text: "#1c1c1c",
   primary: "#eaeaea",
   secondary: "#ffffff",
-  accentColor: "#919191",
+  accentColor: "#eaeaea",
   hover: "#000000",
-  label: "#ffffff",
+  label: "rgb(66, 66, 66)",
   overlay: "rgba(225, 225, 225, 0.3)",
   overlayHover: "rgba(225, 225, 225, 0.7)",
 }
 
 export const darkTheme = {
   text: "#ffffff",
-  primary: "#131313",
+  primary: "#171717",
   secondary: "#0f0f0f",
-  accentColor: "#1c1c1c",
+  accentColor: "#171717",
   hover: "#ffffff",
-  label: "#ffffff",
+  label: "rgb(134, 134, 134)",
   overlay: "rgba(0, 0, 0, 0.5)",
   overlayHover: "rgba(0, 0, 0, 0.7)",
 }

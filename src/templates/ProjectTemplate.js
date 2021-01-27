@@ -16,6 +16,7 @@ export default function Template({ data }) {
     <Layout>
       <Section background="secondary">
         <StyledContainer>
+          <h1>{frontmatter.title}</h1>
           <Img
             fluid={frontmatter.thumbnail.childImageSharp.fluid}
             alt={frontmatter.title}
@@ -37,7 +38,6 @@ export default function Template({ data }) {
             </div>
           </div>
 
-          <h1>{frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }} />
 
           {frontmatter.technologies && (

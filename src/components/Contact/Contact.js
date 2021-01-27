@@ -26,11 +26,11 @@ function Contact({ eleRef, heading = "h2" }) {
         <form name="Contact Form" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="Contact Form" />
           <div className="form-group">
-            <Input name="email" type="email" label="Email" />
-            <Input name="subject" type="text" label="Subject" />
+            <Input name="email" type="email" label="Email" required />
+            <Input name="subject" type="text" label="Subject" required />
           </div>
           <div className="form-group">
-            <Input name="message" textarea={true} label="Message" />
+            <Input name="message" textarea={true} label="Message" required />
           </div>
           <button type="submit">
             Send <FontAwesomeIcon icon={faPaperPlane} />
@@ -123,7 +123,7 @@ const StyledContainer = styled.div`
       border-radius: 5px;
       width: 100%;
       background: ${({ theme }) => theme.accentColor};
-      color: white;
+      color: ${({ theme }) => theme.text};
     }
     textarea {
       height: 250px;

@@ -1,38 +1,36 @@
 import React, { useState } from "react"
 import { useSpring, animated } from "react-spring"
 import { useTheme } from "styled-components"
+import { useToggle } from "../../hooks/useToggle"
 function Input({ type, name, label, textarea = false }) {
   const theme = useTheme()
   const [value, setValue] = useState("")
-  const [{ y, color }, set] = useSpring(() => ({
-    y: 170,
-    color: theme.label,
-  }))
+  const [toggle, handleToggle] = useToggle(false)
+
+  const styles = useSpring({
+    color: toggle ? "#e80583" : theme.label,
+    transform: toggle ? "translateY(0%)" : "translateY(170%)",
+  })
 
   const handleChange = e => {
     setValue(e.target.value)
   }
 
   const moveUp = () => {
-    set({ y: 0, color: "#e80583" })
+    if (!toggle) {
+      handleToggle(true)
+    }
   }
 
   const moveDown = () => {
     if (value === "") {
-      set({ y: 170, color: theme.label })
+      handleToggle(false)
     }
   }
 
   return (
-    <div onBlur={moveDown} onFocus={moveUp} role="presentation">
-      <animated.label
-        style={{
-          transform: y.interpolate(v => `translateY(${v}%`),
-          color: color,
-        }}
-      >
-        {label}
-      </animated.label>
+    <div onFocus={moveUp} onBlur={moveDown} role="presentation">
+      <animated.label style={styles}>{label}</animated.label>
       {textarea ? (
         <textarea name={name} value={value} onChange={handleChange} />
       ) : (
