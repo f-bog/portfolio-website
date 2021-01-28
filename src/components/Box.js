@@ -6,7 +6,7 @@ import { faUmbrellaBeach } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
-const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`
+const trans = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`
 
 export default function Box() {
   const [props, set] = useSpring(() => ({
@@ -19,7 +19,7 @@ export default function Box() {
       >
         <animated.div
           className="border-outside"
-          style={{ transform: props.xy.interpolate(trans1) }}
+          style={{ transform: props.xy.interpolate(trans) }}
         >
           <div className="border-inside"></div>
         </animated.div>

@@ -23,6 +23,7 @@ function Contact({ eleRef, heading = "h2" }) {
             <span>Contact</span> Me.
           </h2>
         )}
+
         <form name="Contact Form" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="Contact Form" />
           <div className="form-group">

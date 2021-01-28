@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { useSpring, animated, config } from "react-spring"
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
-const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 7}px,0`
+const trans = (x, y) => `translate3d(${x / 10}px,${y / 7}px,0`
 
 function HeroSvg() {
   const [props, set] = useSpring(() => ({
@@ -45,7 +45,7 @@ function HeroSvg() {
         />
         <animated.g
           className="cube"
-          style={{ transform: props.xy.interpolate(trans1) }}
+          style={{ transform: props.xy.interpolate(trans) }}
         >
           <path
             className="prefix__st0"

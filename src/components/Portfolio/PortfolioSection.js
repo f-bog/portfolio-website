@@ -62,13 +62,14 @@ const StyledSection = styled.section`
   align-items: center;
   background: ${({ theme }) => theme.primary};
   flex-direction: column;
+  margin: 0 0 1em 0;
   .section-content {
     width: 90%;
   }
 
   .grid {
     height: 100%;
-    margin: 0 auto;
+    margin: 0 0 1em 0;
     display: flex;
     flex-direction: column;
   }

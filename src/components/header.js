@@ -25,7 +25,7 @@ const Header = ({ siteTitle, theme, toggleTheme }) => (
       <Navigation />
       <button className="toggleTheme" onClick={toggleTheme}>
         <FontAwesomeIcon icon={faLightbulb} />
-        <p>{theme === "light" ? "Dark" : "Light"}</p>{" "}
+        <p>{theme === "light" ? "Dark" : "Light"}</p>
       </button>
     </div>
   </StyledHeader>

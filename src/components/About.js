@@ -14,7 +14,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
-const trans1 = (x, y) => `translate3d(${x / 20}px,${y / 20}px,0)`
+const trans = (x, y) => `translate3d(${x / 20}px,${y / 20}px,0)`
 
 function About({ scrollRef }) {
   const [props, set] = useSpring(() => ({
@@ -71,7 +71,7 @@ function About({ scrollRef }) {
       </div>
       <animated.div
         className="content-2"
-        style={{ transform: props.xy.interpolate(trans1) }}
+        style={{ transform: props.xy.interpolate(trans) }}
       >
         <p>
           <FontAwesomeIcon icon={faHtml5} /> HTML
