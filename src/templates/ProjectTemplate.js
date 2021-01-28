@@ -8,12 +8,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLink, faArrowLeft } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import Contact from "../components/Contact/Contact"
+import SEO from "../components/seo"
 
 export default function Template({ data }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
+      <SEO title={frontmatter.title} />
       <Section background="secondary">
         <StyledContainer>
           <h1>{frontmatter.title}</h1>

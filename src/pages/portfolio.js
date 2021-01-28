@@ -7,7 +7,7 @@ import Section from "../components/Section"
 function PortfolioPage() {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Portfolio" />
       <PortfolioSection />
       <Section background="two">
         <Contact />
