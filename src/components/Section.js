@@ -9,7 +9,7 @@ function Section({ children, background, eleRef }) {
   )
 }
 const StyledSection = styled.section`
-  min-height: 100vh;
+  min-height: 90vh;
   width: 100%;
   display: flex;
   justify-content: center;

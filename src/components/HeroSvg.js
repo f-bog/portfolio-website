@@ -66,7 +66,8 @@ function HeroSvg() {
 }
 
 const StyledSvg = styled.div`
-  width: 170px;
+  width: 200px;
+
   .window {
     position: absolute;
     width: 100%;
@@ -77,10 +78,14 @@ const StyledSvg = styled.div`
 
   svg {
     width: 100%;
+    margin-bottom: 5em;
   }
 
   @media only screen and (min-width: 768px) {
     width: 350px;
+    svg {
+      margin-bottom: 0;
+    }
   }
 `
 

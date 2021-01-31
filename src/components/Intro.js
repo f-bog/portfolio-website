@@ -70,7 +70,7 @@ const StyledIntro = styled.div`
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 10px auto;
+    margin: 15px auto;
     justify-content: space-around;
   }
   .introText {
@@ -82,6 +82,9 @@ const StyledIntro = styled.div`
   @media only screen and (min-width: 768px) {
     text-align: right;
     flex-direction: row;
+    h1 {
+      margin-bottom: 0.3em;
+    }
     .button-container {
       max-width: 330px;
 
