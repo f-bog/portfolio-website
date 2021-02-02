@@ -109,7 +109,7 @@ const StyledItem = styled(animated.div)`
     }
     .links {
       display: flex;
-      padding: 1em;
+      padding: 1.6em;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -133,7 +133,7 @@ const StyledItem = styled(animated.div)`
   }
   h3 {
     font-size: 1.5em;
-    padding: 0.6em;
+    padding: 1em;
   }
 
   color: ${({ theme }) => theme};
