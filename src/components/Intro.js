@@ -28,7 +28,7 @@ function Intro() {
           </span>
         </h1>
         <p style={{ fontSize: "1.4em" }}>
-          UI/UX focused Front-End Web Developer
+          UI/UX focused Front-End Web Developer.
         </p>
         <div
           role="presentation"
