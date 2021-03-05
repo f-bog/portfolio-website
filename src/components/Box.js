@@ -28,14 +28,14 @@ export default function Box() {
             <span>About</span> Me.
           </h2>
           <p>
-            Hi, my name is Frederick Bogdanoff. I am a Front-End Developer with
-            a strong love for design.
+            Hi, my name is Frederick Bogdanoff. I am a Web Developer with a
+            strong love for design.
           </p>
           <p>
             Living on the Gold Coast <FontAwesomeIcon icon={faUmbrellaBeach} />.
             I am constantly striving to sharpen my skills, solve important
-            problems for my clients, and develop websites for Australian
-            businesses.
+            problems for my clients, and develop websites & web apps for
+            Australian businesses.
           </p>
           <p>
             The technologies I work with are HTML, CSS, JavaScript, React,

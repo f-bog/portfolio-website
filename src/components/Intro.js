@@ -27,9 +27,7 @@ function Intro() {
             </animated.span>
           </span>
         </h1>
-        <p style={{ fontSize: "1.4em" }}>
-          UI/UX focused Front-End Web Developer.
-        </p>
+        <p style={{ fontSize: "1.4em" }}>UI/UX focused Web Developer.</p>
         <div
           role="presentation"
           className="button-container"
