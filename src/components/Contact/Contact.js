@@ -6,6 +6,7 @@ import {
   faEnvelope,
   faPhoneSquare,
 } from "@fortawesome/free-solid-svg-icons"
+import resume from "../../../static/documents/frederick-bogdanoff-resume.pdf"
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Input from "./Input"
@@ -53,7 +54,7 @@ function Contact({ eleRef, heading = "h2" }) {
         >
           Linkedin <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="/">
+        <a href={resume} target="_blank" rel="noreferrer">
           Resume <FontAwesomeIcon icon={faListAlt} />
         </a>
         <a href="mailto:fredericks.webdesigns@gmail.com">

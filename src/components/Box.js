@@ -2,6 +2,7 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import { useSpring, animated } from "react-spring"
 import Button from "./Buttons/Button"
+import resume from "../../static/documents/frederick-bogdanoff-resume.pdf"
 import { faUmbrellaBeach } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -42,7 +43,15 @@ export default function Box() {
             WordPress, Shopify, and a little bit of Node.js.
           </p>
           <p>
-            Lets build something awesome! <span>Download my Resume.</span>
+            Lets build something awesome!{" "}
+            <a
+              style={{ color: "#e80583" }}
+              href={resume}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download my Resume.
+            </a>
           </p>
 
           <Button path="/about" text="Read More" />

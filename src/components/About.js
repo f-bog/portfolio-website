@@ -12,6 +12,7 @@ import {
   faJs,
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import resume from "../../static/documents/frederick-bogdanoff-resume.pdf"
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
 const trans = (x, y) => `translate3d(${x / 20}px,${y / 20}px,0)`
@@ -56,7 +57,15 @@ function About({ scrollRef }) {
         </p>
         <p>
           If you need help working on something awesome, I would love to hear
-          from you! <span>Download My Resume.</span>
+          from you!{" "}
+          <a
+            style={{ color: "#e80583" }}
+            href={resume}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download my Resume.
+          </a>
         </p>
         <div
           className="button-container"
