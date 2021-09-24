@@ -43,8 +43,7 @@ function About({ scrollRef }) {
         </h1>
         <p>
           My name is Frederick Bogdanoff. I am originally from California, but
-          have been living in Australia( citizen - thanks mom ) for almost 7
-          years.
+          have been living in Australia for almost 7 years.
         </p>
         <p>
           A little over 3 years ago I decided to teach myself web development
