@@ -126,7 +126,7 @@ const StyledItem = styled(animated.div)`
         transition: color 0.2s linear;
         text-decoration: none;
         &:hover {
-          color: #e80583;
+          color: #14b8a6;
         }
       }
     }

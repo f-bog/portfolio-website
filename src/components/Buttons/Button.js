@@ -19,14 +19,14 @@ const StyledButton = styled(Link)`
   text-align: center;
 
   transition: background 0.8s ease;
-  background: ${props => (props.accent ? "rgb(252, 0, 87)" : "#5a5757")};
+  background: ${props => (props.accent ? "rgb(16, 185, 129)" : "#5a5757")};
   background: ${props =>
     props.accent
       ? `linear-gradient(
               90deg,
-              rgba(252, 0, 87, 1) 0%,
-              rgba(199, 16, 206, 1) 50%,
-              rgba(252, 0, 87, 1) 100%
+              rgba(16, 185, 129, 1) 0%,
+              rgba(6, 182, 212, 1) 50%,
+              rgba(16, 185, 129, 1) 100%
             )`
       : `linear-gradient(
               90deg,

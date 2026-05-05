@@ -104,7 +104,7 @@ const StyledCard = styled(animated.div)`
       transition: color 0.2s ease-in-out;
       font-weight: 600;
       &:hover {
-        color: #e80583;
+        color: #14b8a6;
       }
     }
   }

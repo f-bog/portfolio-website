@@ -82,7 +82,7 @@ const StyledContainer = styled.div`
   }
   a {
     text-decoration: none;
-    color: #e80583;
+    color: #14b8a6;
     font-weight: 900;
   }
   h1 {

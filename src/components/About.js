@@ -10,9 +10,10 @@ import {
   faWordpress,
   faShopify,
   faJs,
+  faSwift
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import resume from "../../static/documents/frederick-bogdanoff-resume.pdf"
+import resume from "../../static/documents/Resume.pdf"
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
 const trans = (x, y) => `translate3d(${x / 20}px,${y / 20}px,0)`
@@ -24,7 +25,7 @@ function About({ scrollRef }) {
 
   const [{ y, color }, setBounce] = useSpring(() => ({
     y: -60,
-    color: "#e80583",
+    color: "#14b8a6",
     config: config.wobbly,
   }))
 
@@ -41,25 +42,23 @@ function About({ scrollRef }) {
             .
           </animated.span>
         </h1>
-        <p>
+        {/* <p>
           My name is Frederick Bogdanoff. I am originally from California, but
           have been living in Australia for almost 7 years.
+        </p> */}
+        <p>
+          I am a frontend focused full stack developer with a passion for building web and mobile applications.
         </p>
         <p>
-          A little over 3 years ago I decided to teach myself web development
-          and design. It's been incredibly rewarding, an enjoyable process, and
-          to be honest I'm beginning to think It's impossible to stop learning.
-        </p>
-        <p>
-          I currently work part time as a freelance web developer, maintaining,
-          designing, and developing websites for clients ranging from small
+          I currently work as a freelance developer, maintaining,
+          designing, and developing applications for clients ranging from small
           businesses, ecommerce, and startups.
         </p>
         <p>
           If you need help working on something awesome, I would love to hear
           from you!{" "}
           <a
-            style={{ color: "#e80583" }}
+            style={{ color: "#14b8a6" }}
             href={resume}
             target="_blank"
             rel="noreferrer"
@@ -70,9 +69,9 @@ function About({ scrollRef }) {
         <div
           className="button-container"
           onMouseEnter={() =>
-            setBounce({ y: 0, color: "rgba(199, 16, 206, 1)" })
+            setBounce({ y: 0, color: "rgba(6, 182, 212, 1)" })
           }
-          onMouseLeave={() => setBounce({ y: -60, color: "#e80583" })}
+          onMouseLeave={() => setBounce({ y: -60, color: "#14b8a6" })}
           role="presentation"
         >
           <ScrollButton text="Contact me" scrollRef={scrollRef} />
@@ -102,6 +101,9 @@ function About({ scrollRef }) {
         </p>
         <p>
           <FontAwesomeIcon icon={faWordpress} /> WordPress
+        </p>
+        <p>
+          <FontAwesomeIcon icon={faSwift} /> Swift
         </p>
       </animated.div>
     </StyledContainer>

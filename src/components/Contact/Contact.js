@@ -6,7 +6,7 @@ import {
   faEnvelope,
   faPhoneSquare,
 } from "@fortawesome/free-solid-svg-icons"
-import resume from "../../../static/documents/frederick-bogdanoff-resume.pdf"
+import resume from "../../../static/documents/Resume.pdf"
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Input from "./Input"
@@ -137,12 +137,12 @@ const StyledContainer = styled.div`
       border: none;
       height: 50px;
       transition: background 0.8s ease;
-      background: rgb(252, 0, 87);
+      background: rgb(16, 185, 129);
       background: linear-gradient(
         90deg,
-        rgba(252, 0, 87, 1) 0%,
-        rgba(199, 16, 206, 1) 50%,
-        rgba(252, 0, 87, 1) 100%
+        rgba(16, 185, 129, 1) 0%,
+        rgba(6, 182, 212, 1) 50%,
+        rgba(16, 185, 129, 1) 100%
       );
       background-size: 200% auto;
       background-position: 0%;

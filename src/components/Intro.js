@@ -6,7 +6,7 @@ import { useSpring, animated, config } from "react-spring"
 function Intro() {
   const [{ y, color }, set] = useSpring(() => ({
     y: -60,
-    color: "#e80583",
+    color: "#14b8a6",
     config: config.wobbly,
   }))
   return (
@@ -27,12 +27,12 @@ function Intro() {
             </animated.span>
           </span>
         </h1>
-        <p style={{ fontSize: "1.4em" }}>UI/UX focused Web Developer.</p>
+        <p style={{ fontSize: "1.4em" }}>Full Stack Web and Mobile Application Developer.</p>
         <div
           role="presentation"
           className="button-container"
-          onMouseEnter={() => set({ y: 0, color: "rgba(199, 16, 206, 1)" })}
-          onMouseLeave={() => set({ y: -60, color: "#e80583" })}
+          onMouseEnter={() => set({ y: 0, color: "rgba(6, 182, 212, 1)" })}
+          onMouseLeave={() => set({ y: -60, color: "#14b8a6" })}
         >
           <Button text="About Me" path="/about" />
           <Button
@@ -61,7 +61,7 @@ const StyledIntro = styled.div`
     color: ${({ theme }) => theme.text};
   }
   span {
-    color: #e80583;
+    color: #14b8a6;
     display: inline-block;
   }
 

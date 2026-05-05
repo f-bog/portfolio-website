@@ -17,7 +17,7 @@ a {
   color: ${({ theme }) => theme.text};
 }
   span{
-  color: #e80583;
+  color: #14b8a6;
   display: inline-block;
   }
 

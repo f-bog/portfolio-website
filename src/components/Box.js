@@ -2,7 +2,7 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import { useSpring, animated } from "react-spring"
 import Button from "./Buttons/Button"
-import resume from "../../static/documents/frederick-bogdanoff-resume.pdf"
+import resume from "../../static/documents/Resume.pdf"
 import { faUmbrellaBeach } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -29,29 +29,17 @@ export default function Box() {
             <span>About</span> Me.
           </h2>
           <p>
-            Hi, my name is Frederick Bogdanoff. I am a Web Developer with a
+            Hi, my name is Frederick Bogdanoff. I am a Full Stack Web and Mobile Application Developer with a
             strong love for design.
           </p>
           <p>
             Living on the Gold Coast <FontAwesomeIcon icon={faUmbrellaBeach} />.
             I am constantly striving to sharpen my skills, solve important
-            problems for my clients, and develop websites & web apps for
-            Australian businesses.
+            problems for my clients, and develop web and mobile applications for
+            businesses worldwide.
           </p>
           <p>
-            The technologies I work with are HTML, CSS, JavaScript, React,
-            WordPress, Shopify, and a little bit of Node.js.
-          </p>
-          <p>
-            Lets build something awesome!{" "}
-            <a
-              style={{ color: "#e80583" }}
-              href={resume}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Download my Resume.
-            </a>
+            The technologies I work with are React Native, React, Next.js, Node.js, Express, MongoDB, and PostgreSQL.
           </p>
 
           <Button path="/about" text="Read More" />
@@ -100,12 +88,12 @@ const StyledBox = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #e80583;
+    background: #14b8a6;
     background: linear-gradient(
       90deg,
-      rgba(252, 0, 87, 1) 0%,
-      rgba(199, 16, 206, 1) 50%,
-      rgba(252, 0, 87, 1) 100%
+      rgba(16, 185, 129, 1) 0%,
+      rgba(6, 182, 212, 1) 50%,
+      rgba(16, 185, 129, 1) 100%
     );
     background-size: 400% auto;
     animation: ${gradient} 5s ease infinite;

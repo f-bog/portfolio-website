@@ -8,7 +8,7 @@ function Input({ type, name, label, textarea = false }) {
   const [toggle, handleToggle] = useToggle(false)
 
   const styles = useSpring({
-    color: toggle ? "#e80583" : theme.label,
+    color: toggle ? "#14b8a6" : theme.label,
     transform: toggle ? "translateY(0%)" : "translateY(170%)",
   })
 
