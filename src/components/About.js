@@ -10,7 +10,8 @@ import {
   faWordpress,
   faShopify,
   faJs,
-  faSwift
+  faSwift, 
+  faUmbraco,
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import resume from "../../static/documents/Resume.pdf"
@@ -105,6 +106,10 @@ function About({ scrollRef }) {
         <p>
           <FontAwesomeIcon icon={faSwift} /> Swift
         </p>
+        <p>
+          <FontAwesomeIcon icon={faUmbraco} /> Umbraco
+        </p>
+
       </animated.div>
     </StyledContainer>
   )
